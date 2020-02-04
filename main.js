@@ -179,8 +179,12 @@ var Base64 = {
  
 }
 
-const encrypt = {
-	encrypt : function () {}
+var encrypt = {
+	encrypt : function (msg, key) {
+		var encrypted_1 = CryptoJS.AES.encrypt(msg, key);
+		var encrypted_2 = Base64.encode(encrypted_1);
+		return encrypted_2;
+	}
 }
 
 
