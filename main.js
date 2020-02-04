@@ -179,7 +179,7 @@ var Base64 = {
  
 }
 
-var encrypt = {
+var titanium = {
 	encrypt : function (msg, key) {
 		var encrypted_1 = CryptoJS.AES.encrypt(msg, key);
 		var encrypted_2 = Base64.encode(encrypted_1);
