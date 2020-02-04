@@ -179,5 +179,8 @@ var Base64 = {
  
 }
 
+const encrypt = {
+	encrypt : function () {}
+}
 
 
